@@ -130,6 +130,21 @@ body {
   }
 }
 
+/* ─── Gallery Conveyor Belt ─── */
+
+.gallery-conveyor {
+  animation: conveyor 30s linear infinite;
+}
+
+@keyframes conveyor {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* ─── Focus Visible ─── */
 
 a:focus-visible,
@@ -152,5 +167,9 @@ button:focus-visible {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
+  }
+
+  .gallery-conveyor {
+    animation: none !important;
   }
 }

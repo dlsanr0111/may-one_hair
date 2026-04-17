@@ -26,14 +26,14 @@ export default function ProgramTeaser() {
               className="block border border-paper/15 p-6 hover:bg-paper/8 hover:-translate-y-0.5 transition-all duration-200"
             >
               <p className="text-xs tracking-[0.3em] text-paper/60 uppercase">For Owners</p>
-              <p className="mt-2 font-serif text-xl">원장님을 위한 컨설팅 →</p>
+              <p className="mt-2 font-serif text-lg sm:text-xl">원장님을 위한 컨설팅 →</p>
             </Link>
             <Link
               href="/programs#designers"
               className="block border border-paper/15 p-6 hover:bg-paper/8 hover:-translate-y-0.5 transition-all duration-200"
             >
               <p className="text-xs tracking-[0.3em] text-paper/60 uppercase">For Designers</p>
-              <p className="mt-2 font-serif text-xl">함께할 디자이너 모집 →</p>
+              <p className="mt-2 font-serif text-lg sm:text-xl">함께할 디자이너 모집 →</p>
             </Link>
           </div>
         </div>

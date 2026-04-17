@@ -35,12 +35,12 @@ export default function About() {
           </div>
 
           <div className="reveal-child md:col-span-7">
-            <div className="grid grid-cols-2 gap-3 md:gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
               {INTERIORS.map((img, i) => (
                 <div
                   key={img.src}
                   className={`relative overflow-hidden bg-cream ${
-                    i === 0 ? "aspect-[3/4] row-span-2" : "aspect-[4/3]"
+                    i === 0 ? "aspect-[3/2] sm:aspect-[3/4] sm:row-span-2" : "aspect-[4/3]"
                   }`}
                 >
                   <Image

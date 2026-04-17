@@ -4,7 +4,7 @@ import { BRAND, BRANCHES } from "@/lib/data";
 export default function Footer() {
   return (
     <footer className="border-t border-black/5 bg-cream/40">
-      <div className="mx-auto max-w-[1440px] px-6 md:px-10 py-14">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10 py-14">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <p className="font-serif text-xl tracking-[0.15em]">{BRAND.name}</p>
@@ -39,7 +39,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-xs uppercase tracking-[0.2em] text-stone">Branches</h4>
-            <ul className="mt-4 grid grid-cols-2 gap-y-2 text-sm">
+            <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-y-2 text-sm">
               {BRANCHES.map((b) => (
                 <li key={b.slug}>
                   <Link

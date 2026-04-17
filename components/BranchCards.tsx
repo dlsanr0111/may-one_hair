@@ -21,11 +21,11 @@ export default function BranchCards() {
             <Link
               key={branch.slug}
               href={`/branches/${branch.slug}`}
-              className="group bg-paper p-7 md:p-9 flex flex-col justify-between min-h-[180px] hover:bg-cream/50 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200"
+              className="group bg-paper p-5 sm:p-7 md:p-9 flex flex-col justify-between min-h-[160px] sm:min-h-[180px] hover:bg-cream/50 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200"
             >
               <div>
                 <h3 className="font-serif text-2xl">MAY ONE {branch.name}</h3>
-                <p className="mt-3 text-sm text-ink/60 leading-relaxed">
+                <p className="mt-3 text-sm text-ink/60 leading-relaxed line-clamp-2">
                   {branch.address}
                 </p>
               </div>

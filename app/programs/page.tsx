@@ -70,10 +70,10 @@ export default function ProgramsPage() {
                     href={p.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group border border-ink/10 p-8 md:p-10 flex items-center justify-between bg-paper hover:bg-cream/40 transition-colors"
+                    className="group border border-ink/10 p-6 sm:p-8 md:p-10 flex items-center justify-between gap-3 bg-paper hover:bg-cream/40 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200"
                   >
-                    <h3 className="font-serif text-xl md:text-2xl">{p.title}</h3>
-                    <span className="ml-4 text-ink transition-transform group-hover:translate-x-1">
+                    <h3 className="font-serif text-lg sm:text-xl md:text-2xl">{p.title}</h3>
+                    <span className="ml-2 flex-shrink-0 text-ink transition-transform group-hover:translate-x-1">
                       →
                     </span>
                   </a>

@@ -19,9 +19,9 @@ export default function ServiceList() {
           {SERVICE_CATEGORIES.map((cat) => (
             <div
               key={cat.title}
-              className="bg-paper p-7 md:p-9 hover:bg-cream/30 transition-colors duration-200"
+              className="bg-paper p-5 sm:p-7 md:p-9 hover:bg-cream/30 transition-colors duration-200"
             >
-              <h3 className="font-serif text-2xl">{cat.title}</h3>
+              <h3 className="font-serif text-xl sm:text-2xl">{cat.title}</h3>
               <ul className="mt-5 space-y-2 text-sm text-ink/80">
                 {cat.items.map((item) => (
                   <li key={item} className="flex items-center gap-2">

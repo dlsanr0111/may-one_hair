@@ -17,8 +17,12 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-50 bg-paper/85 backdrop-blur border-b border-black/5">
-      <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-6 md:px-10">
-        <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
+      <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-4 sm:px-6 md:px-10">
+        <Link
+          href="/"
+          className="flex items-center gap-2 py-2 -ml-1 px-1"
+          onClick={() => setOpen(false)}
+        >
           <Image
             src="/images/logo.png"
             alt="MAY ONE"
@@ -44,20 +48,20 @@ export default function Nav() {
 
         <button
           type="button"
-          className="md:hidden inline-flex items-center justify-center w-10 h-10 -mr-2"
+          className="md:hidden inline-flex items-center justify-center w-11 h-11 -mr-1"
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "메뉴 닫기" : "메뉴 열기"}
           aria-expanded={open}
         >
-          <span className="relative block w-5 h-3.5">
+          <span className="relative block w-6 h-4">
             <span
-              className={`absolute left-0 top-0 h-0.5 w-5 bg-ink transition-transform ${
-                open ? "translate-y-1.5 rotate-45" : ""
+              className={`absolute left-0 top-0 h-0.5 w-6 bg-ink transition-transform duration-200 ${
+                open ? "translate-y-[7px] rotate-45" : ""
               }`}
             />
             <span
-              className={`absolute left-0 top-3 h-0.5 w-5 bg-ink transition-transform ${
-                open ? "-translate-y-1.5 -rotate-45" : ""
+              className={`absolute left-0 bottom-0 h-0.5 w-6 bg-ink transition-transform duration-200 ${
+                open ? "-translate-y-[7px] -rotate-45" : ""
               }`}
             />
           </span>
@@ -66,12 +70,12 @@ export default function Nav() {
 
       {open && (
         <nav className="md:hidden border-t border-black/5 bg-paper">
-          <ul className="flex flex-col px-6 py-4">
+          <ul className="flex flex-col px-4 sm:px-6 py-2">
             {NAV_ITEMS.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="block py-3 text-base text-ink/90 hover:text-ink"
+                  className="block py-4 text-base text-ink/90 hover:text-ink"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}

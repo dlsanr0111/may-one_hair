@@ -20,7 +20,7 @@ export default function Hero() {
           <p className="text-xs tracking-[0.4em] text-ink/60 uppercase">
             Premium Hair Salon
           </p>
-          <h1 className="mt-6 font-serif font-medium text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.15] text-ink">
+          <h1 className="mt-6 font-serif font-medium text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.15] text-ink">
             {BRAND.taglineKr}
           </h1>
           <p className="mt-6 text-base md:text-lg text-ink/80 leading-relaxed">
@@ -29,16 +29,16 @@ export default function Hero() {
             전국 7개 지점, MAY ONE 메이원헤어가 함께합니다.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-3">
+          <div className="mt-10 flex flex-col sm:flex-row gap-3">
             <Link
               href="/#branches"
-              className="inline-flex items-center justify-center h-12 px-8 bg-ink text-paper text-sm tracking-wider hover:bg-ink/90 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
+              className="inline-flex items-center justify-center h-12 px-6 sm:px-8 bg-ink text-paper text-sm tracking-wider hover:bg-ink/90 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
             >
               지점 둘러보기
             </Link>
             <Link
               href="/programs"
-              className="inline-flex items-center justify-center h-12 px-8 border border-ink/20 text-ink text-sm tracking-wider hover:bg-ink/5 hover:-translate-y-0.5 hover:shadow-md transition-all duration-200"
+              className="inline-flex items-center justify-center h-12 px-6 sm:px-8 border border-ink/20 text-ink text-sm tracking-wider hover:bg-ink/5 hover:-translate-y-0.5 hover:shadow-md transition-all duration-200"
             >
               지원 및 프로그램
             </Link>
