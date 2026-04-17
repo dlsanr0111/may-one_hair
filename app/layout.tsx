@@ -3,6 +3,7 @@ import { Noto_Sans_KR, Noto_Serif_KR } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import SplashScreen from "@/components/SplashScreen";
 
 const sans = Noto_Sans_KR({
   variable: "--font-pretendard",
@@ -42,6 +43,7 @@ export default function RootLayout({
       className={`${sans.variable} ${serif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-paper text-ink">
+        <SplashScreen />
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

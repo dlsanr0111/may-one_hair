@@ -10,18 +10,18 @@ const INTERIORS = [
 export default function About() {
   return (
     <section id="about" className="py-24 md:py-32 bg-paper">
-      <div className="mx-auto max-w-[1440px] px-6 md:px-10">
+      <div className="mx-auto max-w-[1440px] px-6 sm:px-8 md:px-10">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <p className="text-xs tracking-[0.4em] text-stone uppercase">
+            <p className="reveal-child text-xs tracking-[0.4em] text-ink/60 uppercase">
               About
             </p>
-            <h2 className="mt-4 font-serif text-3xl md:text-5xl leading-tight">
+            <h2 className="reveal-child mt-4 font-serif font-medium text-3xl md:text-5xl leading-tight">
               일상에 머무는
               <br />
               우아한 변화
             </h2>
-            <div className="mt-8 space-y-5 text-ink/75 leading-relaxed">
+            <div className="reveal-child mt-8 space-y-5 text-ink/80 leading-relaxed">
               <p>
                 MAY ONE은 디자이너의 섬세한 시선과 정돈된 공간에서
                 고객 한 분 한 분의 가장 자연스러운 모습을 찾아갑니다.
@@ -34,7 +34,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="md:col-span-7">
+          <div className="reveal-child md:col-span-7">
             <div className="grid grid-cols-2 gap-3 md:gap-4">
               {INTERIORS.map((img, i) => (
                 <div
@@ -48,7 +48,7 @@ export default function About() {
                     alt={img.alt}
                     fill
                     sizes="(min-width: 768px) 30vw, 50vw"
-                    className="object-cover hover:scale-105 transition-transform duration-700"
+                    className="object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               ))}
